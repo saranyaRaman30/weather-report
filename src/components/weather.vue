@@ -6,7 +6,12 @@
 	 </div>
 	 <div class="weather-display-section">
 	 	<div class="show-weather-details">
-      <p>{{this.items}}</p>
+     <div v-for="itm in items">
+        <p>{{itm.name}}</p>
+		<p>{{itm.region}}</p>
+		<p>{{itm.humidity}}</p>
+		<p>{{itm.temperature}}</p>
+      </div>
 	 		<!-- <p>{{listOfObjects}}</p> -->
 	 		<!-- <p v-for="(value, key) in posts">{{ key }}</p> -->
 	 		<ul>
@@ -41,13 +46,13 @@ export default {
     //               console.log('erere',this.items);
     //     })
 	    .then(response => {
-	      this.items = response.data.location;
-	       
+	      this.items = response.data;
+	       console.log(response.data);
 		    })
-     //   let listOfObjects = Object.keys(response.data.location).map((value,index) => {
-     //      return response.data.location[value]
-		   //  console.log('erere',listOfObjects);
-	    // })
+			// let listOfObjects = Object.keys(response.data).map((value,index) => {
+			// 	return response.data[value]
+			// 		console.log('erere',listOfObjects);
+			// 	})
 	    .catch(e => {
 	      this.errors.push(e)
 	    })

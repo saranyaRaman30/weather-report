@@ -6,6 +6,7 @@
 	 </div>
 	 <div class="weather-display-section">
 	 	<div class="show-weather-details">
+      <p>{{this.items}}</p>
 	 		<!-- <p>{{listOfObjects}}</p> -->
 	 		<!-- <p v-for="(value, key) in posts">{{ key }}</p> -->
 	 		<ul>
@@ -40,7 +41,7 @@ export default {
     //               console.log('erere',this.items);
     //     })
 	    .then(response => {
-	      this.info = response.data.location;
+	      this.items = response.data.location;
 	       
 		    })
      //   let listOfObjects = Object.keys(response.data.location).map((value,index) => {

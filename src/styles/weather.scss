@@ -1,0 +1,31 @@
+.weather-textbox{
+	margin: auto;
+	max-width: 50%;
+	input[type=text] {
+	  padding: 10px;
+	  font-size: 17px;
+	  border: 1px solid grey;
+	  float: left;
+	  width: 50%;
+	  background: #f1f1f1;
+	}
+	button {
+	  float: left;
+	  width: 20%;
+	  padding: 10px;
+	  background: #2196F3;
+	  color: white;
+	  font-size: 17px;
+	  border: 1px solid grey;
+	  border-left: none;
+	  cursor: pointer;
+	  &:hover{
+	  	 background: #0b7dda;
+	  }
+	}
+	::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+} 

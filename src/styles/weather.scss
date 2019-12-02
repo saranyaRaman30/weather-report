@@ -1,13 +1,15 @@
 .weather-textbox{
 	margin: auto;
 	max-width: 50%;
+	padding: 20px;
 	input[type=text] {
-	  padding: 10px;
-	  font-size: 17px;
-	  border: 1px solid grey;
-	  float: left;
-	  width: 50%;
-	  background: #f1f1f1;
+	    padding: 10px;
+	    font-size: 17px;
+	    border: 1px solid grey;
+	    float: left;
+	    margin-left: 80px;
+	    width: 50%;
+	    background: #f1f1f1;
 	}
 	button {
 	  float: left;
@@ -29,3 +31,17 @@
 	  display: table;
 	}
 } 
+.weather-display-section{
+	background: #184157;
+    width: 100%;
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+	div p {
+	    clear: both;
+	}
+}
